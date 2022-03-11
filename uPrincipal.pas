@@ -49,9 +49,15 @@ type
     Button5: TButton;
     Edit13: TEdit;
     Label13: TLabel;
-    PageControl1: TPageControl;
+    PageControlGridDados: TPageControl;
     TabSheet1: TTabSheet;
     TabSheet2: TTabSheet;
+    Button6: TButton;
+    Button7: TButton;
+    Button8: TButton;
+    Button9: TButton;
+    Button10: TButton;
+    Button11: TButton;
 
   private
     { Private declarations }

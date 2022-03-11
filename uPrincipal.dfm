@@ -2,7 +2,7 @@
   Left = 0
   Top = 0
   Caption = '98xx - Inspe'#231#227'o de Qualidade'
-  ClientHeight = 759
+  ClientHeight = 667
   ClientWidth = 1036
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -27,8 +27,8 @@
       object GroupBox1: TGroupBox
         Left = 9
         Top = 4
-        Width = 994
-        Height = 189
+        Width = 997
+        Height = 191
         Caption = 'Filtros'
         TabOrder = 0
         object Label1: TLabel
@@ -298,6 +298,30 @@
           Height = 21
           TabOrder = 22
         end
+        object Button6: TButton
+          Left = 696
+          Top = 32
+          Width = 75
+          Height = 25
+          Caption = 'Pesquisar'
+          TabOrder = 23
+        end
+        object Button7: TButton
+          Left = 696
+          Top = 83
+          Width = 75
+          Height = 25
+          Caption = 'Limpar'
+          TabOrder = 24
+        end
+        object Button8: TButton
+          Left = 696
+          Top = 133
+          Width = 75
+          Height = 25
+          Caption = 'Cancelar'
+          TabOrder = 25
+        end
       end
     end
     object Saída: TTabSheet
@@ -309,19 +333,43 @@
       ImageIndex = 2
     end
   end
-  object PageControl1: TPageControl
+  object PageControlGridDados: TPageControl
     Left = 4
-    Top = 248
+    Top = 270
     Width = 1023
-    Height = 297
+    Height = 329
     ActivePage = TabSheet1
     TabOrder = 1
     object TabSheet1: TTabSheet
-      Caption = 'TabSheet1'
+      Caption = 'Pendentes'
+      object Button9: TButton
+        Left = 3
+        Top = 11
+        Width = 75
+        Height = 25
+        Caption = 'Inspecionar'
+        TabOrder = 0
+      end
     end
     object TabSheet2: TTabSheet
-      Caption = 'TabSheet2'
+      Caption = 'Notas Inspecionadas'
       ImageIndex = 1
+      object Button10: TButton
+        Left = 3
+        Top = 11
+        Width = 75
+        Height = 25
+        Caption = 'Alterar'
+        TabOrder = 0
+      end
+      object Button11: TButton
+        Left = 97
+        Top = 11
+        Width = 75
+        Height = 25
+        Caption = 'Excluir'
+        TabOrder = 1
+      end
     end
   end
 end
