@@ -1,8 +1,9 @@
-﻿object frmPrincipal: TfrmPrincipal
+object frmPrincipal: TfrmPrincipal
   Left = 0
   Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
   Caption = '98xx - Inspe'#231#227'o de Qualidade'
-  ClientHeight = 650
+  ClientHeight = 625
   ClientWidth = 1031
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -11,52 +12,31 @@
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
-  object Label27: TLabel
-    Left = 860
-    Top = 630
+  object Desenvolvedor: TLabel
+    Left = 858
+    Top = 607
     Width = 165
     Height = 13
     Caption = 'Desenvolvido por <DB Mesquita/>'
   end
-  object Label28: TLabel
-    Left = 701
-    Top = 152
-    Width = 92
-    Height = 13
-    Caption = 'Per'#237'odo de Emiss'#227'o'
-  end
-  object Label29: TLabel
-    Left = 801
-    Top = 168
-    Width = 6
-    Height = 13
-    Caption = 'a'
-  end
-  object DateTimePicker9: TDateTimePicker
-    Left = 703
-    Top = 150
-    Width = 94
-    Height = 21
-    Date = 44630.000000000000000000
-    Time = 0.756235601853404700
-    TabOrder = 0
-  end
   object PageControlFiltros: TPageControl
-    Left = 8
+    Left = 4
     Top = 8
     Width = 1023
-    Height = 618
-    ActivePage = Entrada
+    Height = 597
+    ActivePage = abaEntrada
     DoubleBuffered = False
     ParentDoubleBuffered = False
-    TabOrder = 1
-    object Entrada: TTabSheet
+    TabOrder = 0
+    object abaEntrada: TTabSheet
       Caption = 'Inspe'#231#227'o de Entrada'
-      object GroupBox1: TGroupBox
+      object gbFilterEntrada: TGroupBox
         Left = 9
-        Top = 4
+        Top = 3
         Width = 997
         Height = 191
         Caption = 'Filtros'
@@ -154,7 +134,7 @@
         end
         object Label30: TLabel
           Left = 672
-          Top = 124
+          Top = 123
           Width = 98
           Height = 13
           Caption = 'Per'#237'odo de Inspe'#231#227'o'
@@ -166,7 +146,7 @@
           Height = 13
           Caption = 'a'
         end
-        object ComboBox1: TComboBox
+        object cbbFilialEntrada: TComboBox
           Left = 7
           Top = 32
           Width = 75
@@ -175,35 +155,35 @@
           TabOrder = 0
           Text = 'Nenhum(a)'
         end
-        object Edit1: TEdit
+        object edtNotaFiscalEnt: TEdit
           Left = 92
           Top = 32
           Width = 98
           Height = 21
           TabOrder = 1
         end
-        object Edit2: TEdit
+        object edtTransIniEnt: TEdit
           Left = 200
           Top = 32
           Width = 98
           Height = 21
           TabOrder = 2
         end
-        object Edit3: TEdit
+        object edtTransFinEnt: TEdit
           Left = 315
           Top = 32
           Width = 98
           Height = 21
           TabOrder = 3
         end
-        object Edit4: TEdit
+        object edtCodForEnt: TEdit
           Left = 7
           Top = 70
           Width = 62
           Height = 21
           TabOrder = 4
         end
-        object Edit5: TEdit
+        object edtNomeForEnt: TEdit
           Left = 96
           Top = 70
           Width = 316
@@ -246,7 +226,7 @@
           Time = 0.756235601853404700
           TabOrder = 9
         end
-        object Button1: TButton
+        object btnPesquisaFornecEnt: TButton
           Left = 70
           Top = 69
           Width = 25
@@ -254,14 +234,14 @@
           Caption = '...'
           TabOrder = 10
         end
-        object Edit6: TEdit
+        object edtCodDepEnt: TEdit
           Left = 7
           Top = 109
           Width = 62
           Height = 21
           TabOrder = 11
         end
-        object Button2: TButton
+        object btnPesquisaDepEnt: TButton
           Left = 70
           Top = 108
           Width = 25
@@ -269,21 +249,21 @@
           Caption = '...'
           TabOrder = 12
         end
-        object Edit7: TEdit
+        object edtNomeDepEnt: TEdit
           Left = 96
           Top = 109
           Width = 221
           Height = 21
           TabOrder = 13
         end
-        object Edit8: TEdit
+        object edtCodSecEnt: TEdit
           Left = 327
           Top = 109
           Width = 62
           Height = 21
           TabOrder = 14
         end
-        object Button3: TButton
+        object btnPesquisaSecaoEnt: TButton
           Left = 390
           Top = 108
           Width = 25
@@ -291,21 +271,21 @@
           Caption = '...'
           TabOrder = 15
         end
-        object Edit9: TEdit
+        object edtNomeSecEnt: TEdit
           Left = 416
           Top = 109
           Width = 237
           Height = 21
           TabOrder = 16
         end
-        object Edit10: TEdit
+        object edtCodProdEnt: TEdit
           Left = 7
           Top = 147
           Width = 62
           Height = 21
           TabOrder = 17
         end
-        object Button4: TButton
+        object btnPesquisaProdEnt: TButton
           Left = 70
           Top = 146
           Width = 25
@@ -313,21 +293,21 @@
           Caption = '...'
           TabOrder = 18
         end
-        object Edit11: TEdit
+        object edtNomeProdEnt: TEdit
           Left = 96
           Top = 147
           Width = 221
           Height = 21
           TabOrder = 19
         end
-        object Edit12: TEdit
+        object edtCodFunEnt: TEdit
           Left = 327
           Top = 147
           Width = 62
           Height = 21
           TabOrder = 20
         end
-        object Button5: TButton
+        object btnPesquisaFuncEnt: TButton
           Left = 390
           Top = 146
           Width = 25
@@ -335,14 +315,14 @@
           Caption = '...'
           TabOrder = 21
         end
-        object Edit13: TEdit
+        object edtNomeFunEnt: TEdit
           Left = 416
           Top = 147
           Width = 237
           Height = 21
           TabOrder = 22
         end
-        object Button6: TButton
+        object btnPesquisarEntrada: TButton
           Left = 901
           Top = 30
           Width = 75
@@ -350,7 +330,7 @@
           Caption = 'Pesquisar'
           TabOrder = 23
         end
-        object Button7: TButton
+        object btnLimparEntrada: TButton
           Left = 901
           Top = 86
           Width = 75
@@ -358,23 +338,23 @@
           Caption = 'Limpar'
           TabOrder = 24
         end
-        object Button8: TButton
+        object btnCancelEntrada: TButton
           Left = 901
           Top = 138
           Width = 75
           Height = 25
           Caption = 'Cancelar'
           TabOrder = 25
-          OnClick = Button8Click
+          OnClick = btnCancelEntradaClick
         end
-        object GroupBox3: TGroupBox
+        object gbInspRealEntrada: TGroupBox
           Left = 441
           Top = 23
           Width = 162
           Height = 65
           Caption = 'Inspe'#231#227'o Realizada ?'
           TabOrder = 26
-          object CheckBox1: TCheckBox
+          object cbInspSimEntrada: TCheckBox
             Left = 16
             Top = 26
             Width = 97
@@ -382,8 +362,8 @@
             Caption = 'Sim'
             TabOrder = 0
           end
-          object CheckBox2: TCheckBox
-            Left = 79
+          object cbInspNaoEntrada: TCheckBox
+            Left = 91
             Top = 26
             Width = 97
             Height = 17
@@ -410,59 +390,76 @@
           TabOrder = 28
         end
       end
-      object TGroupBox
+      object PageControlGridDados: TPageControl
         Left = 9
-        Top = 224
+        Top = 215
         Width = 997
-        Height = 353
+        Height = 352
+        ActivePage = TabSheet1
         TabOrder = 1
-        object PageControlGridDados: TPageControl
-          Left = 0
-          Top = 0
-          Width = 999
-          Height = 352
-          ActivePage = TabSheet2
-          TabOrder = 0
-          object TabSheet1: TTabSheet
-            Caption = 'Notas Pendentes'
-            object Button9: TButton
-              Left = 3
-              Top = 3
-              Width = 75
-              Height = 25
-              Caption = 'Inspecionar'
-              TabOrder = 0
-            end
+        object TabSheet1: TTabSheet
+          Caption = 'Notas Pendentes'
+          object dbgNfPenEnt: TDBGrid
+            Left = 1
+            Top = 40
+            Width = 984
+            Height = 281
+            TabOrder = 0
+            TitleFont.Charset = DEFAULT_CHARSET
+            TitleFont.Color = clWindowText
+            TitleFont.Height = -11
+            TitleFont.Name = 'Tahoma'
+            TitleFont.Style = []
           end
-          object TabSheet2: TTabSheet
-            Caption = 'Notas Inspecionadas'
-            ImageIndex = 1
-            object Button10: TButton
-              Left = 3
-              Top = 3
-              Width = 75
-              Height = 25
-              Caption = 'Alterar'
-              TabOrder = 0
-            end
-            object Button11: TButton
-              Left = 92
-              Top = 3
-              Width = 75
-              Height = 25
-              Caption = 'Excluir'
-              TabOrder = 1
-            end
+          object btnInspecionarEntrada: TButton
+            Left = 3
+            Top = 0
+            Width = 75
+            Height = 25
+            Caption = 'Inspecionar'
+            TabOrder = 1
+          end
+        end
+        object TabSheet2: TTabSheet
+          Caption = 'Notas Inspecionadas'
+          ImageIndex = 1
+          object btnAlterarEntrada: TButton
+            Left = 3
+            Top = 0
+            Width = 75
+            Height = 25
+            Caption = 'Alterar'
+            TabOrder = 0
+          end
+          object btnExcluirEntrada: TButton
+            Left = 92
+            Top = 0
+            Width = 75
+            Height = 25
+            Caption = 'Excluir'
+            TabOrder = 1
+          end
+          object dbgNfInspEnt: TDBGrid
+            Left = 1
+            Top = 40
+            Width = 984
+            Height = 281
+            TabOrder = 2
+            TitleFont.Charset = DEFAULT_CHARSET
+            TitleFont.Color = clWindowText
+            TitleFont.Height = -11
+            TitleFont.Name = 'Tahoma'
+            TitleFont.Style = []
           end
         end
       end
     end
-    object Saída: TTabSheet
+    object abaSaida: TTabSheet
       Caption = 'Inspe'#231#227'o de Sa'#237'da'
       ImageIndex = 1
-      object GroupBox2: TGroupBox
+      object gbFilterSaida: TGroupBox
         Left = 9
-        Top = 4
+        Top = 3
         Width = 997
         Height = 191
         Caption = 'Filtros'
@@ -566,13 +563,13 @@
           Caption = 'a'
         end
         object Label33: TLabel
-          Left = 669
-          Top = 124
+          Left = 672
+          Top = 123
           Width = 98
           Height = 13
           Caption = 'Per'#237'odo de Inspe'#231#227'o'
         end
-        object ComboBox2: TComboBox
+        object cbbFilialSaida: TComboBox
           Left = 7
           Top = 32
           Width = 75
@@ -581,35 +578,35 @@
           TabOrder = 0
           Text = 'Nenhum(a)'
         end
-        object Edit14: TEdit
+        object edtNotaFiscalSaida: TEdit
           Left = 92
           Top = 32
           Width = 98
           Height = 21
           TabOrder = 1
         end
-        object Edit15: TEdit
+        object edtTransIniSaida: TEdit
           Left = 200
           Top = 32
           Width = 98
           Height = 21
           TabOrder = 2
         end
-        object Edit16: TEdit
+        object edtTransFinSaida: TEdit
           Left = 315
           Top = 32
           Width = 98
           Height = 21
           TabOrder = 3
         end
-        object Edit17: TEdit
+        object edtCodForSaida: TEdit
           Left = 7
           Top = 70
           Width = 62
           Height = 21
           TabOrder = 4
         end
-        object Edit18: TEdit
+        object edtSaidaForSai: TEdit
           Left = 96
           Top = 70
           Width = 316
@@ -652,7 +649,7 @@
           Time = 0.756235601853404700
           TabOrder = 9
         end
-        object Button12: TButton
+        object btnPesquisaFornecSaida: TButton
           Left = 70
           Top = 69
           Width = 25
@@ -660,14 +657,14 @@
           Caption = '...'
           TabOrder = 10
         end
-        object Edit19: TEdit
+        object edtCodDepSaida: TEdit
           Left = 7
           Top = 109
           Width = 62
           Height = 21
           TabOrder = 11
         end
-        object Button13: TButton
+        object btnPesquisaDepSaida: TButton
           Left = 70
           Top = 108
           Width = 25
@@ -675,21 +672,21 @@
           Caption = '...'
           TabOrder = 12
         end
-        object Edit20: TEdit
+        object edtNomeDepSaida: TEdit
           Left = 96
           Top = 109
           Width = 221
           Height = 21
           TabOrder = 13
         end
-        object Edit21: TEdit
+        object edtCodSecSaida: TEdit
           Left = 327
           Top = 109
           Width = 62
           Height = 21
           TabOrder = 14
         end
-        object Button14: TButton
+        object btnPesquisaSecaoSaida: TButton
           Left = 390
           Top = 108
           Width = 25
@@ -697,21 +694,21 @@
           Caption = '...'
           TabOrder = 15
         end
-        object Edit22: TEdit
+        object edtNomeSecSaida: TEdit
           Left = 416
           Top = 109
           Width = 237
           Height = 21
           TabOrder = 16
         end
-        object Edit23: TEdit
+        object edtCodProdSaida: TEdit
           Left = 7
           Top = 147
           Width = 62
           Height = 21
           TabOrder = 17
         end
-        object Button15: TButton
+        object btnPesquisaProdSaida: TButton
           Left = 70
           Top = 146
           Width = 25
@@ -719,21 +716,21 @@
           Caption = '...'
           TabOrder = 18
         end
-        object Edit24: TEdit
+        object edtNomeProdSaida: TEdit
           Left = 96
           Top = 147
           Width = 221
           Height = 21
           TabOrder = 19
         end
-        object Edit25: TEdit
+        object edtCodFunSaida: TEdit
           Left = 327
           Top = 147
           Width = 62
           Height = 21
           TabOrder = 20
         end
-        object Button16: TButton
+        object btnPesquisaFuncSaida: TButton
           Left = 390
           Top = 146
           Width = 25
@@ -741,14 +738,14 @@
           Caption = '...'
           TabOrder = 21
         end
-        object Edit26: TEdit
+        object edtNomeFunSaida: TEdit
           Left = 416
           Top = 147
           Width = 237
           Height = 21
           TabOrder = 22
         end
-        object Button17: TButton
+        object btnPesquisarSaida: TButton
           Left = 901
           Top = 30
           Width = 75
@@ -756,7 +753,7 @@
           Caption = 'Pesquisar'
           TabOrder = 23
         end
-        object Button18: TButton
+        object btnLimparSaida: TButton
           Left = 901
           Top = 86
           Width = 75
@@ -764,7 +761,7 @@
           Caption = 'Limpar'
           TabOrder = 24
         end
-        object Button19: TButton
+        object btnCancelarSaida: TButton
           Left = 901
           Top = 138
           Width = 75
@@ -790,14 +787,14 @@
           Time = 0.756235601853404700
           TabOrder = 28
         end
-        object GroupBox4: TGroupBox
+        object gbInspRealSaida: TGroupBox
           Left = 441
           Top = 23
           Width = 162
           Height = 65
           Caption = 'Inspe'#231#227'o Realizada ?'
           TabOrder = 26
-          object CheckBox3: TCheckBox
+          object cbInspSimSaida: TCheckBox
             Left = 16
             Top = 26
             Width = 97
@@ -805,8 +802,8 @@
             Caption = 'Sim'
             TabOrder = 0
           end
-          object CheckBox4: TCheckBox
-            Left = 79
+          object cbInspNaoSaida: TCheckBox
+            Left = 91
             Top = 26
             Width = 97
             Height = 17
@@ -817,45 +814,69 @@
       end
       object PageControl1: TPageControl
         Left = 9
-        Top = 224
+        Top = 215
         Width = 997
         Height = 352
-        ActivePage = TabSheet4
+        ActivePage = TabSheet3
         TabOrder = 1
         object TabSheet3: TTabSheet
           Caption = 'Notas Pendentes'
-          object Button20: TButton
+          object dbgNfPenSaida: TDBGrid
+            Left = 1
+            Top = 40
+            Width = 984
+            Height = 281
+            TabOrder = 0
+            TitleFont.Charset = DEFAULT_CHARSET
+            TitleFont.Color = clWindowText
+            TitleFont.Height = -11
+            TitleFont.Name = 'Tahoma'
+            TitleFont.Style = []
+          end
+          object btnInspecionarSaida: TButton
             Left = 3
-            Top = 3
+            Top = 0
             Width = 75
             Height = 25
             Caption = 'Inspecionar'
-            TabOrder = 0
+            TabOrder = 1
           end
         end
         object TabSheet4: TTabSheet
           Caption = 'Notas Inspecionadas'
           ImageIndex = 1
-          object Button21: TButton
+          object btnAlterarSaida: TButton
             Left = 3
-            Top = 3
+            Top = 0
             Width = 75
             Height = 25
             Caption = 'Alterar'
             TabOrder = 0
           end
-          object Button22: TButton
+          object btnExcluirSaida: TButton
             Left = 92
-            Top = 3
+            Top = 0
             Width = 75
             Height = 25
             Caption = 'Excluir'
             TabOrder = 1
           end
+          object dbgNfInspSaida: TDBGrid
+            Left = 1
+            Top = 40
+            Width = 984
+            Height = 281
+            TabOrder = 2
+            TitleFont.Charset = DEFAULT_CHARSET
+            TitleFont.Color = clWindowText
+            TitleFont.Height = -11
+            TitleFont.Name = 'Tahoma'
+            TitleFont.Style = []
+          end
         end
       end
     end
-    object Relatorios: TTabSheet
+    object abaRelatorios: TTabSheet
       Caption = 'Relatorios'
       ImageIndex = 2
     end

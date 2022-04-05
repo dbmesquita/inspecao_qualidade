@@ -7,7 +7,18 @@
     <Transaction>2022/03/11 10:48:53.000.302,C:\Dev\Projects\Delphi\inspecao_qualidade\uPrincipal.dfm=C:\Dev\Projects\Delphi\Unit1.dfm</Transaction>
     <Transaction>2022/03/11 10:49:19.000.484,C:\Dev\Projects\Delphi\inspecao_qualidade\inspecao_qualidade.dproj=C:\Dev\Projects\Delphi\Project1.dproj</Transaction>
     <Transaction>2022/03/11 17:37:16.000.444,=C:\Dev\Projects\Delphi\inspecao_qualidade\Unit1.pas</Transaction>
-    <Transaction>2022/03/11 17:39:10.000.890,C:\Dev\Projects\Delphi\inspecao_qualidade\Unit1.pas=C:\Dev\Projects\Delphi\inspecao_qualidade\datamodule\uDTMConexao.pas</Transaction>
     <Transaction>2022/03/11 17:39:10.000.890,C:\Dev\Projects\Delphi\inspecao_qualidade\Unit1.dfm=C:\Dev\Projects\Delphi\inspecao_qualidade\datamodule\uDTMConexao.dfm</Transaction>
+    <Transaction>2022/03/11 17:39:10.000.890,C:\Dev\Projects\Delphi\inspecao_qualidade\Unit1.pas=C:\Dev\Projects\Delphi\inspecao_qualidade\datamodule\uDTMConexao.pas</Transaction>
+    <Transaction>2022/03/23 18:02:53.010,=C:\Dev\Projects\Delphi\inspecao_qualidade\Unit1.pas</Transaction>
+    <Transaction>2022/03/23 18:03:28.767,C:\Dev\Projects\Delphi\inspecao_qualidade\heranca.dfm=C:\Dev\Projects\Delphi\inspecao_qualidade\Unit1.dfm</Transaction>
+    <Transaction>2022/03/23 18:03:28.767,C:\Dev\Projects\Delphi\inspecao_qualidade\heranca.pas=C:\Dev\Projects\Delphi\inspecao_qualidade\Unit1.pas</Transaction>
+    <Transaction>2022/03/23 18:04:04.610,C:\Dev\Projects\Delphi\inspecao_qualidade\heranca.pas=</Transaction>
+    <Transaction>2022/03/23 18:04:10.777,=C:\Dev\Projects\Delphi\inspecao_qualidade\Unit1.pas</Transaction>
+    <Transaction>2022/03/23 18:06:05.631,C:\Dev\Projects\Delphi\inspecao_qualidade\inherited\uInherited.dfm=C:\Dev\Projects\Delphi\inspecao_qualidade\Unit1.dfm</Transaction>
+    <Transaction>2022/03/23 18:06:05.631,C:\Dev\Projects\Delphi\inspecao_qualidade\inherited\uInherited.pas=C:\Dev\Projects\Delphi\inspecao_qualidade\Unit1.pas</Transaction>
+    <Transaction>2022/03/23 18:10:38.994,C:\Dev\Projects\Delphi\inspecao_qualidade\inherited\uInherited.pas=</Transaction>
+    <Transaction>2022/03/23 18:10:45.307,=C:\Dev\Projects\Delphi\inspecao_qualidade\Unit1.pas</Transaction>
+    <Transaction>2022/03/23 18:11:28.081,C:\Dev\Projects\Delphi\inspecao_qualidade\inherited\uInspect.pas=C:\Dev\Projects\Delphi\inspecao_qualidade\Unit1.pas</Transaction>
+    <Transaction>2022/03/23 18:11:28.081,C:\Dev\Projects\Delphi\inspecao_qualidade\inherited\uInspect.dfm=C:\Dev\Projects\Delphi\inspecao_qualidade\Unit1.dfm</Transaction>
   </Transactions>
 </BorlandProject>

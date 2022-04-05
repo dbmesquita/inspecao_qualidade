@@ -7,12 +7,14 @@ object dtmPrincipal: TdtmPrincipal
     Catalog = ''
     Properties.Strings = (
       'controls_cp=CP_UTF16')
-    HostName = ''
+    SQLHourGlass = True
+    HostName = '192.168.0.150'
     Port = 1521
-    Database = ''
-    User = ''
-    Password = ''
-    Protocol = ''
+    Database = 'PROD'
+    User = 'FRIBEL'
+    Password = 'FG2hu3DV4T'
+    Protocol = 'oracle'
+    LibraryLocation = 'C:\Dev\Projects\Delphi\inspecao_qualidade\oci.dll'
     Left = 16
     Top = 16
   end

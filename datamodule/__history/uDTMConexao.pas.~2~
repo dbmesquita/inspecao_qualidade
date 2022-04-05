@@ -7,7 +7,7 @@ uses
   ZAbstractDataset, ZAbstractTable, ZDataset, ZAbstractConnection, ZConnection;
 
 type
-  TdtmPrincipal = class(TDataModule)
+  TdtmConexao = class(TDataModule)
     bdFribel: TZConnection;
     tbEntrada: TZTable;
     dsEntrada: TDataSource;
@@ -32,13 +32,12 @@ type
   end;
 
 var
-  dtmPrincipal: TdtmPrincipal;
+  dtmConexao: TdtmConexao;
 
 implementation
 
 {%CLASSGROUP 'Vcl.Controls.TControl'}
 
 {$R *.dfm}
-
 
 end.
